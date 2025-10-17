@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play 서울 자가에 대기업 다니는 김 부장 이야기.</tw-noscript></noscript></tw-story>
-<tw-storydata name="서울 자가에 대기업 다니는 김 부장 이야기" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="8DDFDB07-F001-4E76-98E6-6854D28CD224" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* 0) 사이드바 숨김(원하면 이 블록만 빼도 됨) */
+<tw-storydata name="서울 자가에 대기업 다니는 김 부장 이야기" startnode="59" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="8DDFDB07-F001-4E76-98E6-6854D28CD224" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* 0) 사이드바 숨김(원하면 이 블록만 빼도 됨) */
 tw-sidebar{ display:none !important; }
 tw-expression{ display:block; width:100%; }
 :root{ --shift-bottom: 25vh; }
@@ -61,14 +61,55 @@ tw-expression[name="text-size"] > tw-hook > *{
   margin-right:auto;
 }
 
+tw-story[tags~="Start"]
+{
+	background-image:url('images/poster.jpg');      
+    background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: 500px;
+  	background-color: rgba(5,5,5,.120); /* 알파 */
+  	background-blend-mode: multiply;
+}
+
+
+tw-story[tags~="Past1"]
+{
+  background-color:black; 
+}
+
+
+
+
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
-</script><tw-passagedata pid="1" name="시작" tags="" position="800,325" size="100,100">(font:&quot;궁서체&quot;)+(text-size:1.5)[서울 자가에 대기업 다니는]
-(text-size:2)[&#39;&#39;김 부장 이야기&#39;&#39;]
+</script><tw-tag name="Past2" color="orange"></tw-tag><tw-tag name="Past1" color="red"></tw-tag><tw-passagedata pid="1" name="시작" tags="Start" position="800,325" size="100,100">(set: $_watchedNews to false)
+(set: $_watchedGolf to false)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 (text-style:&quot;fade-in-out&quot;)[[시작하기-&gt;인트로]]
 
-&lt;img src =images/poster.jpg&gt;</tw-passagedata><tw-passagedata pid="2" name="인트로" tags="" position="800,450" size="100,100">
+
+</tw-passagedata><tw-passagedata pid="2" name="인트로" tags="" position="800,450" size="100,100">
 
 (t8n:&quot;fade&quot;)+(t8n-time:1500ms)
 [
@@ -194,10 +235,10 @@ tw-expression[name="text-size"] > tw-hook > *{
 (after:38000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L27&gt;[//(아닌 건 아닌 거지.)//](animate:?L27, &quot;faderight&quot;)&lt;br&gt;]
 (after:39000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L28&gt;[//(허락까진 아니더라도 상사에게 상의 정도는)//]&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L28&gt;[//(했어야 하는 게 도리잖아.)//](animate:?L28, &quot;faderight&quot;)&lt;br&gt;]
 (after:40000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L29&gt;[//(정상이 아닌 것을 정상이라고 생각하는 게)//]&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L29&gt;[//(오히려 이상한 거 아니야?)//](animate:?L29, &quot;faderight&quot;)&lt;br&gt;]
-(after:42000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L30&gt;[//아니 이게 뭐야! 내 차에 언제 스크래치가 난 거야···//](animate:?L30, &quot;faderight&quot;)&lt;br&gt;]
+(after:42000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L30&gt;[//아니 이게 뭐야! 내 차에 언제 스크래치가 난 거야···//](animate:?L30, &quot;faderight&quot;)&lt;br&gt;]
 (after:43500ms)+(append:?Narr)[&lt;br&gt;|L31&gt;[스크래치가 난 것은 차가 아니라]&lt;br&gt;|L31&gt;[그의 자존심일지도 모르겠다.](animate:?L31, &quot;fadeup&quot;)&lt;br&gt;]
 (after:45000ms)+(append:?Narr)[
-	[[다음-&gt;회사]]
+	[[계속-&gt;회사]]
 ]</tw-passagedata><tw-passagedata pid="5" name="지하철" tags="" position="900,750" size="100,100">|Narr&gt;[]
 
 (after:300ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L1&gt;[//이 시간엔 지하철이 편해.//]&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L1&gt;[//가지고 나가면 고생만 하지 뭐.//](animate:?L1, &quot;faderight&quot;)&lt;br&gt;]
@@ -228,12 +269,12 @@ tw-expression[name="text-size"] > tw-hook > *{
 (after:40000ms)+(append:?Narr)[&lt;br&gt;|L26&gt;[스크래치가 난 것은 가방이 아니라]&lt;br&gt;|L26&gt;[그의 자존심일지도 모르겠다.](animate:?L26, &quot;fadeup&quot;)&lt;br&gt;]
 (after:40500ms)+(append:?Narr)
 [
-	[[다음-&gt;휴게실]]
+	[[계속-&gt;휴게실]]
 ]</tw-passagedata><tw-passagedata pid="6" name="회사" tags="" position="800,1100" size="100,100">|Narr&gt;[]
 
-(after:1500ms)+(append:?Narr)[&lt;br&gt;|L3&gt;[회사 도착 후 핸드폰 먼저 보는 김 부장이었다.](animate:?L3, &quot;fadeup&quot;)&lt;br&gt;]
+(after:1500ms)+(append:?Narr)[|L3&gt;[회사 도착 후 핸드폰 먼저 보는 김 부장이었다.](animate:?L3, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
 
-(after:4000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L9&gt;[//(일할 기분도 아니구만···)//](animate:?L9, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+(after:4000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L9&gt;[//(일할 기분도 아니구만···)//](animate:?L9, &quot;faderight&quot;)&lt;br&gt;]
 (after:6000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L10&gt;[//(뭐 볼만한 것 좀 있나?)//](animate:?L10, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
 
 (after:8000ms)+(append:?Narr)
@@ -263,104 +304,120 @@ tw-expression[name="text-size"] > tw-hook > *{
 (after:36000ms)+(append:?Narr)
 [
 	[[다음-&gt;회사]]
-]</tw-passagedata><tw-passagedata pid="8" name="골프 영상 시청" tags="" position="700,1300" size="100,100">|Narr&gt;[]
+]</tw-passagedata><tw-passagedata pid="8" name="골프 영상 시청" tags="" position="700,1300" size="100,100">(set: $_watchedGolf to true)
+|Narr&gt;[]
 
 (after:1500ms)+(append:?Narr)[(text-size:1.15)+(text-color:yellow+black)&lt;br&gt;|L3&gt;[드라이버 비거리 50m 상승! 무조건 성공!!(animate:?L3, &quot;fadeup&quot;)]&lt;br&gt;]
 (after:3000ms)+(append:?Narr)[(text-size:1.15)+(text-color:yellow+black)&lt;br&gt;|L4&gt;[성공의 비결은 바로···(animate:?L4, &quot;fadeup&quot;)]&lt;br&gt;]
 
-(after:5000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L9&gt;[//(그러고 보니 저번주에 상무님과 골프를 쳤었지···)//](animate:?L9, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
-(after:7000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L10&gt;[//(최부장 그 자식만 아니었어도 점수를 더 딸 수 있었는데)//](animate:?L10, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+(after:5000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;&lt;br&gt;|L9&gt;[//(그러고 보니 저번주에 상무님과 골프를 쳤었지···)//](animate:?L9, &quot;faderight&quot;)&lt;br&gt;]
+(after:7000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L10&gt;[//(최부장 그 자식만 아니었어도 점수를 더 딸 수 있었는데)//](animate:?L10, &quot;faderight&quot;)&lt;br&gt;]
 (after:9000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L11&gt;[//(눈치 없는 자식···)//](animate:?L11, &quot;faderight&quot;)&lt;br&gt;]
 
 (after:11000ms)+(append:?Narr)[&lt;br&gt;|L12&gt;[화만 더 돋우는 김 부장이었다. ](animate:?L12, &quot;fadeup&quot;)&lt;br&gt;]
 
 (after:13000ms)+(append:?Narr)
 [
-	[[다음-&gt;동기와 대화]]
-    [[뉴스 확인]]
-]</tw-passagedata><tw-passagedata pid="9" name="뉴스 확인" tags="" position="900,1300" size="100,100">|Narr&gt;[]
+		(if: $_watchedNews is true)
+    [
+   		[[계속-&gt;동기와 대화]]
+    ]
+	(if: $_watchedNews is false)
+    [
+    	[[뉴스 확인]]
+    ]
+]</tw-passagedata><tw-passagedata pid="9" name="뉴스 확인" tags="" position="900,1300" size="100,100">(set: $_watchedNews to false)
+
+|Narr&gt;[]
 
 (after:1500ms)+(append:?Narr)[(text-size:1.15)+(text-color:blue+black)&lt;br&gt;|L3&gt;[아파트 값이 천정부지로 오르고 있습니다.](animate:?L3, &quot;fadeup&quot;)&lt;br&gt;]
 
-(after:3500ms)+(append:?Narr)[&lt;br&gt;|L12&gt;[10년 전에 매수한 지금의 아파트](animate:?L12, &quot;fadeup&quot;)&lt;br&gt;]
+(after:3500ms)+(append:?Narr)[&lt;br&gt;|L12&gt;[10년 전에 매수한 지금의 아파트](animate:?L12, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
 
-(after:5000ms)+(append:?Narr)[(text-size:1.15)+(text-color:blue+black)&lt;br&gt;|L9&gt;[올해 부동산 전망과 상승하고 있는 소비 심리 지수에 대해 알아보겠습니다.](animate:?L9, &quot;fadeup&quot;)&lt;br&gt;]
-(after:7000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L10&gt;[//뭐야?//](animate:?L10, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+(after:5000ms)+(append:?Narr)[(text-size:1.15)+(text-color:blue+black)&lt;br&gt;|L9&gt;[올해 부동산 전망과 상승하고 있는 소비 심리 지수에 대해 알아보겠습니다.](animate:?L9, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+(after:7000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L10&gt;[//뭐야?//](animate:?L10, &quot;faderight&quot;)&lt;br&gt;]
 (after:9000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L11&gt;[//아파트 값이 언제 저렇게 올랐어?//](animate:?L11, &quot;faderight&quot;)&lt;br&gt;]
-(after:11000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L16&gt;[//우리 집은?//]&lt;br&gt;&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L16&gt;[//어디 보자~//](animate:?L16, &quot;faderight&quot;)&lt;br&gt;]
-(after:13500ms)+(append:?Narr)[(text-size:1.25)+(text-color:grey+black)&lt;br&gt;|L17&gt;[//3억!?//](animate:?L17, &quot;faderight&quot;)&lt;br&gt;]
-(after:15500ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L18&gt;[//작년보다 3억이나 올랐다고?//](animate:?L18, &quot;faderight&quot;)&lt;br&gt;]
+(after:11000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L16&gt;[//우리 집은?//](animate:?L16, &quot;faderight&quot;)&lt;br&gt;]
+(after:13000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L19&gt;[//어디 보자~//](animate:?L19, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+(after:15500ms)+(append:?Narr)[(text-size:1.25)+(text-color:grey+black)&lt;br&gt;|L17&gt;[//3억!?//](animate:?L17, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+(after:17500ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L18&gt;[//작년보다 3억이나 올랐다고?//](animate:?L18, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
 
-(after:18000ms)+(append:?Narr)[&lt;br&gt;|L12&gt;[이미 두 배가 되어 있는 아파트만이 김 부장을 위로해준다.](animate:?L12, &quot;fadeup&quot;)&lt;br&gt;]
+(after:19000ms)+(append:?Narr)[|L12&gt;[이미 두 배가 되어 있는 아파트만이 김 부장을 위로해준다.](animate:?L12, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
 
-(after:20000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L24&gt;[//내가 일만 잘하는 게 아니라//](animate:?L24, &quot;faderight&quot;)&lt;br&gt;]
-(after:22000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L25&gt;[//부동산 보는 눈도 탁월하네!//](animate:?L25, &quot;faderight&quot;)&lt;br&gt;]
+(after:21000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L24&gt;[//내가 일만 잘하는 게 아니라//](animate:?L24, &quot;faderight&quot;)&lt;br&gt;]
+(after:23000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L25&gt;[//부동산 보는 눈도 탁월하네!//](animate:?L25, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
 
-(after:24000ms)+(append:?Narr)[(text-size:0.85)+(text-color:blue+black)&lt;br&gt;|L26&gt;[//OO역과 XX동을 연결하는 지하철 노선이 확정되었습니다.//](animate:?L26, &quot;fadeup&quot;)&lt;br&gt;]
+(after:25000ms)+(append:?Narr)[(text-size:0.85)+(text-color:blue+black)|L26&gt;[//OO역과 XX동을 연결하는 지하철 노선이 확정되었습니다.//](animate:?L26, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
 
-(after:26000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L27&gt;[//XX동? 내가 저번에 받은 명함 쪽이잖아?//](animate:?L27, &quot;faderight&quot;)&lt;br&gt;]
-(after:28000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L28&gt;[//내 안목은 알아봐 줘야 한다니깐. 하하//](animate:?L28, &quot;faderight&quot;)&lt;br&gt;]
+(after:27000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L27&gt;[//XX동? 내가 저번에 받은 명함 쪽이잖아?//](animate:?L27, &quot;faderight&quot;)&lt;br&gt;]
+(after:29000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)&lt;br&gt;|L28&gt;[//내 안목은 알아봐 줘야 한다니깐. 하하//](animate:?L28, &quot;faderight&quot;)&lt;br&gt;]
 
-(after:30000ms)+(append:?Narr)
+(after:31000ms)+(append:?Narr)
 [
-	[[다음-&gt;동기와 대화]]
-    [[골프 영상 시청]]
+	(if: $_watchedGolf is true)
+    [
+   		[[계속-&gt;동기와 대화]]
+    ]
+	(if: $_watchedGolf is false)
+    [
+    	[[골프 영상 시청]]
+    ]
+    
 ]</tw-passagedata><tw-passagedata pid="10" name="동기와 대화" tags="" position="800,1425" size="100,100">|Narr&gt;[]
 
-(after:1500ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L5&gt;[//여보세요.//]&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L5&gt;[//어! 웬일이야? 이시간에···//](animate:?L5, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
-(after:3500ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L8&gt;[//··· 커피? 좋지~ 어딘데?//](animate:?L8, &quot;faderight&quot;)]
+(after:1500ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L5&gt;[//여보세요.//]&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L5&gt;[//어! 웬일이야? 이시간에···//](animate:?L5, &quot;faderight&quot;)&lt;br&gt;]
+(after:3500ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L8&gt;[//··· 커피? 좋지~ 어딘데?//](animate:?L8, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
 
-(after:5500ms)+(append:?Narr)[|L1&gt;[···(animate:?L1, &quot;fadeup&quot;)]&lt;br&gt;]
-(after:5500ms)+(append:?Narr)[|L1&gt;[···(animate:?L1, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:5500ms)+(append:?Narr)[|L1&gt;[···(animate:?L1, &quot;fadeup&quot;)]]
+(after:5500ms)+(append:?Narr)[|L1&gt;[···(animate:?L1, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
 
 (after:8000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L00&gt;[//그게 뭔 소리야? ···//](animate:?L00, &quot;faderight&quot;)&lt;br&gt;]
-(after:10000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L02&gt;[//느닷없이 발령이라니? 그것도 지방으로?//](animate:?L02, &quot;faderight&quot;)&lt;br&gt;]
+(after:10000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L02&gt;[//느닷없이 발령이라니? 그것도 지방으로?//](animate:?L02, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
 
 (after:12000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:orange)|L9&gt;[//사실상 회사에서 이제 그만 나가라는 통보 아니겠어?//](animate:?L9, &quot;fadeleft&quot;)&lt;br&gt;]
-(after:14000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:orange)|L10&gt;[//내가 회사에 바친 세월이 몇 년인데!//(animate:?L10, &quot;fadeleft&quot;)]&lt;br&gt;]
-(after:16000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:orange)|L11&gt;[//아무리 생각해도 정도가 지나치잖아 안 그래? //](animate:?L11, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:14000ms)+(append:?Narr)[(text-size:0.85)+(text-color:orange)|L10&gt;[//내가 회사에 바친 세월이 몇 년인데!//(animate:?L10, &quot;fadeleft&quot;)]&lt;br&gt;]
+(after:16000ms)+(append:?Narr)[(text-size:0.85)+(text-color:orange)|L11&gt;[//아무리 생각해도 정도가 지나치잖아 안 그래? //](animate:?L11, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
 
-(after:18000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L19&gt;[//(연락도 잘 안 하던 녀석이 갑자기 불러낸 이유가 이거였군?)//](animate:?L19, &quot;faderight&quot;)]
+(after:18000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L19&gt;[//(연락도 잘 안 하던 녀석이 갑자기 불러낸 이유가 이거였군?)//](animate:?L19, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
 
-(after:20000ms)+(append:?Narr)[&lt;br&gt;|L13&gt;[위기를 마주한 동기와의 대화는 딱히 그에게 위기감을 심어주지 못했다.(animate:?L13, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:20000ms)+(append:?Narr)[&lt;br&gt;|L13&gt;[위기를 마주한 동기와의 대화는 딱히 그에게 위기감을 심어주지 못했다.(animate:?L13, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
 
-(after:22000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L20&gt;[//(··· 안되긴 했다만)//]&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L20&gt;[//(그러게 평소에 신경을 좀 썼어야지.)//](animate:?L20, &quot;faderight&quot;)]
+(after:22000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L20&gt;[//(··· 안되긴 했다만)//]&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L20&gt;[//(그러게 평소에 신경을 좀 썼어야지.)//](animate:?L20, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
 
 (after:24000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:orange)|L16&gt;[//너도 똑같아. 하루라도 빨리 자기 살길 찾아야지//](animate:?L16, &quot;fadeleft&quot;)&lt;br&gt;]
-(after:26000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:orange)|L18&gt;[//미리미리 준비하지 않으면 내 꼴 난다.//](animate:?L18, &quot;fadeleft&quot;)&lt;br&gt;]
-(after:28000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:orange)|L22&gt;[//내 말 명심해. //](animate:?L22, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:26000ms)+(append:?Narr)[(text-size:0.85)+(text-color:orange)|L18&gt;[//미리미리 준비하지 않으면 내 꼴 난다.//](animate:?L18, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:28000ms)+(append:?Narr)[(text-size:0.85)+(text-color:orange)|L22&gt;[//내 말 명심해. //](animate:?L22, &quot;fadeleft&quot;)&lt;br&gt;]
 
-(after:30000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L14&gt;[//(다르지. 똑같긴 누가 ···)//](animate:?L14, &quot;faderight&quot;)&lt;br&gt;]
+(after:30000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L14&gt;[//(다르지. 똑같긴 누가 ···)//](animate:?L14, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
 
-(after:32000ms)+(append:?Narr)[&lt;br&gt;|L17&gt;[오히려 그의 자존감을 높여주는 동기가 될 뿐.(animate:?L17, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:32000ms)+(append:?Narr)[&lt;br&gt;|L17&gt;[오히려 그의 자존감을 높여주는 동기가 될 뿐.(animate:?L17, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
 
 (after:34000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L21&gt;[//(난 진급 누락 없이 한 번에 여기까지 왔는걸?)//](animate:?L21, &quot;faderight&quot;)&lt;br&gt;]
 (after:36000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L23&gt;[//(게다가 저번주에는 상무님과 골프도 쳤다고···)//](animate:?L23, &quot;fadeleft&quot;)&lt;br&gt;]
-
-(after:38000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L24&gt;[//(잘리기는커녕 오히려 내년에 이사로 승진할지도 몰라.)//](animate:?L24, &quot;faderight&quot;)&lt;br&gt;]
-(after:40000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey + black)|L25&gt;[//(내가 맡은 프로젝트가 몇 개인데···)//](animate:?L25, &quot;fadeleft&quot;)&lt;br&gt;]
-(after:42000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey + black)|L26&gt;[//(···감히 날 잘라? 자를 수 있으면 자르라지?)//](animate:?L26, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:38000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L24&gt;[//(잘리기는커녕 오히려 내년에 이사로 승진할지도 몰라.)//](animate:?L24, &quot;faderight&quot;)&lt;br&gt;]
+(after:40000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey + black)|L25&gt;[//(내가 맡은 프로젝트가 몇 개인데···)//](animate:?L25, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:42000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey + black)|L26&gt;[//(···감히 날 잘라? 자를 수 있으면 자르라지?)//](animate:?L26, &quot;fadeleft&quot;)&lt;br&gt;]
 
 (after:44000ms)+(append:?Narr)[
-	[[다음-&gt;상무님의 부름]]
+	[[계속-&gt;상무님의 부름]]
 ]
 </tw-passagedata><tw-passagedata pid="11" name="상무님의 부름" tags="" position="900,1550" size="100,100">|Narr&gt;[]
 
-(after:1500ms)+(append:?Narr)[|L3&gt;[··· (animate:?L3, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:1500ms)+(append:?Narr)[|L3&gt;[··· (animate:?L3, &quot;fadeup&quot;)]]
 (after:1500ms)+(append:?Narr)[|L3&gt;[··· (animate:?L3, &quot;fadeup&quot;)]&lt;br&gt;]
 
 (after:3000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:purple + black)|L27&gt;[//저~ 부장님?//](animate:?L27, &quot;fadeleft&quot;)&lt;br&gt;]
-(after:5000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:purple + black)|L28&gt;[//···조금 전까지 상무님께서 찾으셨어요.//(animate:?L28, &quot;fadeleft&quot;)]&lt;br&gt;]
-(after:7000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:purple + black)|L29&gt;[//가보셔야 할 것 같은데요? //](animate:?L29, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:5000ms)+(append:?Narr)[(text-size:0.85)+(text-color:purple + black)|L28&gt;[//···조금 전까지 상무님께서 찾으셨어요.//(animate:?L28, &quot;fadeleft&quot;)]&lt;br&gt;]
+(after:7000ms)+(append:?Narr)[(text-size:0.85)+(text-color:purple + black)|L29&gt;[//가보셔야 할 것 같은데요? //](animate:?L29, &quot;fadeleft&quot;)&lt;br&gt;]
 
-(after:9000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey + black)|L30&gt;[//상무님께서?//](animate:?L30, &quot;faderight&quot;)&lt;br&gt;]
+(after:9000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey + black)|L30&gt;[//상무님께서?//](animate:?L30, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
 
 (after:11000ms)+(append:?Narr)[|L6&gt;[자존심의 여운을 즐기기도 전에···(animate:?L6, &quot;fadeup&quot;)]&lt;br&gt;]
 
 (after:13000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:purple + black)|L31&gt;[//긴히 하실 말씀이 있으시다고···//](animate:?L31, &quot;fadeleft&quot;)&lt;br&gt;]
 (after:15000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey + black)|L32&gt;[//···기분은? 상무님 기분은 어때 보였는데?//](animate:?L32, &quot;faderight&quot;)&lt;br&gt;]
 (after:17000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:purple + black)|L33&gt;[//그게···//](animate:?L33, &quot;fadeleft&quot;)&lt;br&gt;]
-(after:19000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:purple + black)|L34&gt;[//···별로 안 좋아보이셨어요.//](animate:?L34, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:19000ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:purple + black)|L34&gt;[//···별로 안 좋아보이셨어요.//](animate:?L34, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
 
 (after:21000ms)+(append:?Narr)[|L07&gt;[위기가 찾아왔다···(animate:?L07, &quot;fadeup&quot;)]&lt;br&gt;]
 
@@ -1830,7 +1887,657 @@ tw-expression[name="text-size"] > tw-hook > *{
 (after:77000ms)+(append:?Narr)[
 	[[계속-&gt;또 다시 병원]]
 ]
-</tw-passagedata><tw-passagedata pid="42" name="또 다시 병원" tags="" position="800,4300" size="100,100"></tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="42" name="또 다시 병원" tags="" position="900,4300" size="100,100">|Narr&gt;[]
+
+(after:1500ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L21&gt;[//뭐 ··· 뭘 그렇게 놀란 눈으로 봅니까?//](animate:?L21, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:3000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#ffaaca)|L12&gt;[//솔직히 ··· //](animate:?L12, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:5000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#ffaaca)|L27&gt;[// 다시 안 오실줄 알았거든요.//](animate:?L27, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:7000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#ffaaca)|L10&gt;[// 어떤 계기로 마음의 변화가 생기셨는지는 모르지만 //(animate:?L10, &quot;fadeleft&quot;)]&lt;br&gt;]
+(after:9000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#ffaaca)|L23&gt;[//치료에 의지가 확고하시다는 뜻으로 받아들여도 되겠죠?//](animate:?L23, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:11000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#ffaaca)|L24&gt;[// 우선 저번에 이야기를 나누던 회사 얘기를 좀 더 해볼까요? //](animate:?L24, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:13000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#ffaaca)|L38&gt;[//주변 사람들이 김 부장님을 험담하고 배신했다고 말씀하셨는데 //](animate:?L38, &quot;faderight&quot;)&lt;br&gt;]
+(after:15000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#ffaaca)|L25&gt;[//그렇게 생각하시는 이유를 들어볼 수 있을까요? //](animate:?L25, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:17000ms)+(append:?Narr)[|L03&gt;[회사가 나온 이유가 그 때문이 아니라는 것쯤은](animate:?L03, &quot;fadeup&quot;)&lt;br&gt;]
+(after:19000ms)+(append:?Narr)[|L26&gt;[그도 알고 있었다.](animate:?L26, &quot;fadeup&quot;)&lt;br&gt;]
+(after:21000ms)+(append:?Narr)[|N1&gt;[하지만 그것이 아니라면 그저 본인의 무능함을](animate:?N1, &quot;fadeup&quot;)&lt;br&gt;]
+(after:23000ms)+(append:?Narr)[|N2&gt;[인정해야 하기에 ··· 받아들이지 않은 것뿐이다.](animate:?N2, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:25000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A1&gt;[//원래 ··· 회사라는 곳이 그래요.//(animate:?A1, &quot;faderight&quot;)]&lt;br&gt;]
+(after:27000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A2&gt;[//그래도 제겐 익숙한 일이었습니다.  //(animate:?A2, &quot;faderight&quot;)]&lt;br&gt;]
+(after:29000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A3&gt;[//어릴 적부터 그놈의 경쟁하는 버릇이 몸에 배어 있던 탓인지 ···//(animate:?A3, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:31000ms)+(append:?Narr)[|N3&gt;[김 부장의 굳게 닫힌 마음을 열 수 있는 실마리가 보이기 시작한다.](animate:?N3, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:33000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#ffaaca)|L28&gt;[//어릴 때부터 경쟁에 익숙하셨다는 말씀은 ···//](animate:?L28, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:35000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A4&gt;[//부모님은 절 알아주지 않으셨어요. //(animate:?A4, &quot;faderight&quot;)]&lt;br&gt;]
+(after:37000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A5&gt;[// ··· 칭찬도 없었고 별로 관심도 안 주셨던 것 같아요. //(animate:?A5, &quot;faderight&quot;)]&lt;br&gt;]
+(after:39000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A6&gt;[// 그래서인지 ··· 뭐든 형들보다 잘하고 싶어 했던 것 같아요. //(animate:?A6, &quot;faderight&quot;)]&lt;br&gt;]
+
+(after:41000ms)+(append:?Narr)
+[
+	[[계속-&gt;또 다시 병원2]]
+]
+
+
+</tw-passagedata><tw-passagedata pid="43" name="또 다시 병원2" tags="Past1" position="700,4350" size="100,100">|Narr&gt;[]
+
+(after:1500ms)+(append:?Narr)[&lt;br&gt;(text-size:1.25)+(text-color:white)|A1&gt;[//몇 학년 때였는지 ··· 처음으로 부반장이 됐었는데//(animate:?A1, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:3000ms)+(append:?Narr)[(text-size:1.25)+(text-color:white)|A2&gt;[//줄곧 반장을 하던 큰형 학교에 어머니가 //(animate:?A2, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:5000ms)+(append:?Narr)[(text-size:1.25)+(text-color:white)|A3&gt;[//떡을 맞춰 들고 가신 기억 때문인 것 같아요.//(animate:?A3, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:7000ms)+(append:?Narr)[(text-size:1.25)+(text-color:white)|A4&gt;[//반장과 압도적인 표 차이가 있었지만,  //(animate:?A4, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:9000ms)+(append:?Narr)[(text-size:1.25)+(text-color:white)|A5&gt;[// 부반장이 됐다는 것만으로도 //(animate:?A5, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:11000ms)+(append:?Narr)[(text-size:1.25)+(text-color:white)|A6&gt;[// 저에겐 꿈같은 일이었어요. //(animate:?A6, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:13000ms)+(append:?Narr)[(text-size:1.25)+(text-color:white)|A7&gt;[// 그날 집에는 아무도 없었어요. //(animate:?A7, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:15000ms)+(append:?Narr)[(text-size:1.25)+(text-color:white)|A8&gt;[//빨리 가족 누군가라도 집에 돌아오길 기다렸어요.//(animate:?A8, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:17000ms)+(append:?Narr)[(text-size:1.25)+(text-color:white)|A9&gt;[//가장 먼저 집에 온 사람은 무뚝뚝한 둘째 형이었죠.  //(animate:?A9, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:19000ms)+(append:?Narr)[(text-size:1.25)+(text-color:white)|A10&gt;[//그리고 꽤 시간이 흘러 늦은 밤,//(animate:?A10, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:21000ms)+(append:?Narr)[(text-size:1.25)+(text-color:white)|A11&gt;[//부모님께서 돌아오셨어요. //(animate:?A11, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:23000ms)+(append:?Narr)[(text-size:1.25)+(text-color:white)|A12&gt;[//기대했던 칭찬이나 축하의 인사 따윈 없었어요. //(animate:?A12, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:25000ms)+(append:?Narr)[(text-size:1.25)+(text-color:white)|A13&gt;[// 저는 그저 부모님께 //(animate:?A13, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;&lt;br&gt;]
+(after:27000ms)+(append:?Narr)[(text-size:1.75)+(text-color:white)|A14&gt;[//&#39;잘했다&#39;//(animate:?A14, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;&lt;br&gt;]
+(after:29000ms)+(append:?Narr)[(text-size:1.25)+(text-color:white)|A15&gt;[//··· 그 한마디를//(animate:?A15, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:31000ms)+(append:?Narr)[(text-size:1.25)+(text-color:white)|A16&gt;[//듣고 싶었던 것 뿐이었어요.//(animate:?A16, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:33000ms)+(append:?Narr)
+[
+	[[계속-&gt;또 다시 병원3]]
+]</tw-passagedata><tw-passagedata pid="44" name="또 다시 병원3" tags="" position="900,4450" size="100,100">|Narr&gt;[]
+
+(after:1500ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L21&gt;[//돌이켜보면//](animate:?L21, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+(after:3000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A1&gt;[//어린시절 ··· 저는 집에서 딱 그정도밖에//(animate:?A1, &quot;faderight&quot;)]&lt;br&gt;]
+(after:5000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A2&gt;[//되지 않는 존재였던 것 같아요. //(animate:?A2, &quot;faderight&quot;)]&lt;br&gt;]
+(after:7000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A3&gt;[//물러 터진 귤.//(animate:?A3, &quot;faderight&quot;)]&lt;br&gt;]
+(after:9000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A4&gt;[//그래서 그렇게 살고 싶지 않았습니다.//(animate:?A4, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:11000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A5&gt;[//보란 듯이 성공해서 부모님께도, 가족에게도 ···//(animate:?A5, &quot;faderight&quot;)]&lt;br&gt;]
+(after:13000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A6&gt;[// 친구 ··· 그 누구에게도 무시당하고 싶지 않았아요. //(animate:?A6, &quot;faderight&quot;)]&lt;br&gt;]
+(after:15000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A7&gt;[//나름 성공한 삶을 살았다고 생각했습니다.//(animate:?A7, &quot;faderight&quot;)]&lt;br&gt;]
+(after:17000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A8&gt;[//모두가 절 성공한 사람이라고 부러워했으니까요.//(animate:?A8, &quot;faderight&quot;)]&lt;br&gt;]
+(after:19000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A9&gt;[//부모님도 이젠 절 자랑스러워 하셨으니까요.//(animate:?A9, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:21000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A10&gt;[//먹고싶은 것, 사고 싶은 것에도 부족함이 없고//(animate:?A10, &quot;faderight&quot;)]&lt;br&gt;]
+(after:23000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A11&gt;[//이 좁은 땅덩아리에 두 발 뻗고 잠잘 수 있는//(animate:?A11, &quot;faderight&quot;)]&lt;br&gt;]
+(after:25000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A12&gt;[// 내 집 하나 가지고 있으니까요.//(animate:?A12, &quot;faderight&quot;)]&lt;br&gt;]
+(after:27000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A13&gt;[// 그 들어가기 어렵다는 대기업에서 저는 부장이었으니까요.//(animate:?A13, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:29000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#ffaaca)|L12&gt;[// ··· //](animate:?L12, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:31000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#ffaaca)|L27&gt;[//지금껏 부모님께서 김 부장님을//](animate:?L27, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:33000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#ffaaca)|L10&gt;[//  인정해 주시지 않았다고 생각했던 이유가 //(animate:?L10, &quot;fadeleft&quot;)]&lt;br&gt;]
+(after:35000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#ffaaca)|L23&gt;[//··· 혹시 뭐라고 생각하세요?//](animate:?L23, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:37000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A14&gt;[//그야 ··· 워낙 바쁘셨으니까요.//(animate:?A14, &quot;faderight&quot;)]&lt;br&gt;]
+(after:39000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A15&gt;[//그때는 먹고사는 것도 힘든 시절이라 ···//(animate:?A15, &quot;faderight&quot;)]&lt;br&gt;]
+(after:41000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A16&gt;[//세 형제를 키우는 것도 쉽지 않았을 것 같고//(animate:?A16, &quot;faderight&quot;)]&lt;br&gt;]
+(after:43000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A17&gt;[//일만 하고 사셔서 그랬는지,//(animate:?A17, &quot;faderight&quot;)]&lt;br&gt;]
+(after:45000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A18&gt;[//저까지 챙길 여력이 없지 않았을까요?//(animate:?A18, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:47000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#ffaaca)|L24&gt;[// 김 부장님은 어떠신가요?//](animate:?L24, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:50000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A19&gt;[// 뭐가 ··· 말입니까?//(animate:?A19, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:53000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#ffaaca)|L38&gt;[//이제 반대로 아버지가 되셨잖아요. //](animate:?L38, &quot;faderight&quot;)&lt;br&gt;]
+(after:55000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#ffaaca)|L25&gt;[//부장님께서 그토록 원하셨던 것처럼 //](animate:?L25, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:57000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#ffaaca)|L28&gt;[//아드님을 칭찬해 주고 인정해 주고 //](animate:?L28, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:59000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#ffaaca)|L0028&gt;[//관심을 가져주고 계신가요? //](animate:?L0028, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:61000ms)+(append:?Narr)
+[
+	[[계속-&gt;또 다시 병원4]]
+]
+
+
+</tw-passagedata><tw-passagedata pid="45" name="또 다시 병원4" tags="Past1" position="700,4500" size="100,100">|Narr&gt;[]
+
+(after:1500ms)+(append:?Narr)[|Img1&gt;[ &lt;img src = &quot;images/tangerine.jpg&quot; height = &quot;400px&quot;&gt; (animate:?Img1, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:3000ms)+(append:?Narr)[(text-size:0.85)+(text-color:gray + white)|L00&gt;[// 아아~ 됐어 안 먹어.//](animate:?L00, &quot;faderight&quot;)&lt;br&gt;]
+(after:5000ms)+(append:?Narr)[(text-size:0.85)+(text-color:gray + white)|L02&gt;[// 물러터진 귤을 무슨 맛으로 먹나? //](animate:?L02, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:7000ms)+(append:?Narr)[(text-color:white)|L6&gt;[철부지 막내였던 그가 어느새 (animate:?L6, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:9000ms)+(append:?Narr)[(text-color:white)|L13&gt;[나이를 먹고 아버지가 되었다.(animate:?L13, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:11000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red + white + black)|L12&gt;[//왜~ 달기만 하고만 ···//](animate:?L12, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:13000ms)+(append:?Narr)[(text-size:0.85)+(text-color:gray + white)|L21&gt;[//그보다 너 이제 대학생인데 진로는 정했냐?//](animate:?L21, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:15000ms)+(append:?Narr)[(text-color:white)|L020&gt;[아들이게 자신의 정도를 강요하는(animate:?L020, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:17000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#00407F)|L27&gt;[// 아뇨. 그게 저 ··· //](animate:?L27, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:19000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#00407F)|L44&gt;[// 군대 다녀와서 천천히 고민을 좀//](animate:?L44, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:21000ms)+(append:?Narr)[(text-color:white)|L024&gt;[또 다른 ··· (animate:?L024, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:23000ms)+(append:?Narr)[(text-size:0.85)+(text-color:gray + white)|L30&gt;[//하여튼 물러 터져 가지고는//](animate:?L30, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:25000ms)+(append:?Narr)[(text-color:white)|L025&gt;[··· 똑같은 아버지가 되었다.(animate:?L025, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:27000ms)+(append:?Narr)[(text-size:0.85)+(text-color:gray + white)|L40&gt;[//너도 대기업을 다녀라.//](animate:?L40, &quot;faderight&quot;)&lt;br&gt;]
+
+(after:29000ms)+(append:?Narr)[(text-size:0.85)+(text-color:gray + white)|L47&gt;[//그게 사회에서 가장 올바르게 성공하는 길이야.//](animate:?L47, &quot;faderight&quot;)&lt;br&gt;]
+
+(after:31000ms)+(append:?Narr)[
+	[[계속-&gt;또 다시 병원5]]
+]
+</tw-passagedata><tw-passagedata pid="46" name="또 다시 병원5" tags="Past1" position="900,4600" size="100,100">|Narr&gt;[]
+
+(after:3000ms)+(append:?Narr)[(text-color:white)|L6&gt;[무서우리만큼 똑같다. (animate:?L6, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:5000ms)+(append:?Narr)[(text-size:0.85)+(text-color:gray + white)|L00&gt;[// 아빠. 일요일인데 오늘도 회사 가세요?  //](animate:?L00, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:7000ms)+(append:?Narr)[(text-color:white)|L13&gt;[바쁘다는 핑계로 볼 수 있는 것은 (animate:?L13, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:9000ms)+(append:?Narr)[(text-color:white)|L020&gt;[늘 뒷모습뿐이었던 ··· (animate:?L020, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:11000ms)+(append:?Narr)[(text-color:white)|L024&gt;[ ··· 그럼에도 마주하고 싶지는 않았던 아버지와  (animate:?L024, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:13000ms)+(append:?Narr)[(text-color:white)|L025&gt;[ 본인이 무섭도록 닮아있다. (animate:?L025, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:15000ms)+(append:?Narr)[(text-color:white)|L026&gt;[자신의 말에는 단 한 번도 귀 기울여주지 않았지만 (animate:?L026, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:17000ms)+(append:?Narr)[(text-color:white)|L027&gt;[칭찬받고 싶었고 ··· (animate:?L027, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:19000ms)+(append:?Narr)[(text-color:white)|L028&gt;[ ··· 늘 인정받고 싶었다. (animate:?L028, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:21000ms)+(append:?Narr)[(text-color:white)|L029&gt;[그럼에도, 그렇게나 싫어했던 아버지의 모습을 닮은 (animate:?L029, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:23000ms)+(append:?Narr)[(text-color:white)|L030&gt;[또 다른 무관심한 아버지가 되었다는 사실을 (animate:?L030, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:25000ms)+(append:?Narr)[(text-color:white)|L031&gt;[ 이제야 깨닫는다. (animate:?L031, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:35000ms)+(append:?Narr)[(text-color:white)|L032&gt;[ 문득, 아들이 했던 말이 떠오른다.(animate:?L032, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:27000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#00407F)|S1&gt;[//보시기에 지금은 보잘 것도 없고, 맘에도 안 드시겠지만 ···//](animate:?S1, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:29000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#00407F)|S2&gt;[//언젠가는 아버지가 떳떳하게 자랑하고 다니실 수 있을 만큼//](animate:?S2, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:31000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#00407F)|S3&gt;[//성공해 보일게요.//](animate:?S3, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:33000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#00407F)|S4&gt;[//··· 조금만 더 지켜봐 주세요.//](animate:?S4, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:35000ms)+(append:?Narr)[(text-color:white)|L033&gt;[ 다행히 아들의 용기는 본인을 닮은 구석이 없었다.(animate:?L033, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:37000ms)+(append:?Narr)[
+	[[계속-&gt;또 다시 병원6]]
+]
+</tw-passagedata><tw-passagedata pid="47" name="또 다시 병원6" tags="" position="700,4650" size="100,100">|Narr&gt;[]
+
+
+(after:1500ms)+(append:?Narr)[&lt;br&gt;|N1&gt;[해준 것이 뭐가 있다고 그리 말했을까?](animate:?N1, &quot;fadeup&quot;)&lt;br&gt;]
+(after:3000ms)+(append:?Narr)[|N2&gt;[오히려 그런 아들의 날개를 꺾으려 했던 것은 아닐까,](animate:?N2, &quot;fadeup&quot;)&lt;br&gt;]
+(after:5000ms)+(append:?Narr)[|N3&gt;[자책감과 동시에 ···](animate:?N3, &quot;fadeup&quot;)&lt;br&gt;]
+(after:7000ms)+(append:?Narr)[|N4&gt;[··· 본인과 닮지 않게 키워준](animate:?N4, &quot;fadeup&quot;)&lt;br&gt;]
+(after:9000ms)+(append:?Narr)[|N5&gt;[아내를 향한 고마움이 가슴에 번진다.](animate:?N5, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:11000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#ffaaca)|L12&gt;[// 오늘은 여기까지 할게요. //](animate:?L12, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:13000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#ffaaca)|L27&gt;[// 그럼 다음 주에 다시 뵙겠습니다. //](animate:?L27, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:15000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L21&gt;[//저 ··· 선생님. 고맙습니다.//](animate:?L21, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:17000ms)+(append:?Narr)[|N6&gt;[저도 모르게 튀어나온 감사의 인사 때문일까?](animate:?N6, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:19000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W1&gt;[// 여보! 여기~ //](animate:?W1, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:21000ms)+(append:?Narr)[|N7&gt;[속내를 울음으로 터트려서일까?](animate:?N7, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:23000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W2&gt;[// 상담 잘 받았어? 오늘은 좀 오래 걸렸네? //](animate:?W2, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:25000ms)+(append:?Narr)[|N8&gt;[기다리고 있던 아내의 미소 덕분인지도 모르지만](animate:?N8, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:27000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A2&gt;[//오래 기다렸어? //(animate:?A2, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:29000ms)+(append:?Narr)[|N9&gt;[한결 마음이 편해진 기분이 든다.](animate:?N9, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:31000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W3&gt;[// 약 안 먹었다고 혼나진 않았어? //](animate:?W3, &quot;fadeleft&quot;)&lt;br&gt;]
+
+(after:33000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A1&gt;[//혼나긴 ··· 내가 무슨 앤가?//(animate:?A1, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:35000ms)+(append:?Narr)[|N10&gt;[집에 가는 길, 문득 고맙다는 인사를 아내에게 하고 싶었다.](animate:?N10, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:37000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A3&gt;[// ··· 여보//(animate:?A3, &quot;faderight&quot;)]&lt;br&gt;]
+
+(after:39000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W4&gt;[// 응? //](animate:?W4, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:41000ms)+(append:?Narr)[|N11&gt;[더욱이 아내가 보는 본인은 어떤 모습일지도 궁금했지만 ··· ](animate:?N11, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:43000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A4&gt;[// 아 ··· 아냐. 아무것도 ··· //(animate:?A4, &quot;faderight&quot;)]&lt;br&gt;]
+
+(after:45000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W5&gt;[// ···? //](animate:?W5, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:47000ms)+(append:?Narr)[|N12&gt;[ ··· 미안함이 앞서 차마 입 밖으로 꺼내진 못했다. ](animate:?N12, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:49000ms)+(append:?Narr)
+[
+	[[계속-&gt;고백]]
+]
+
+
+</tw-passagedata><tw-passagedata pid="48" name="고백" tags="" position="900,4750" size="100,100">|Narr&gt;[]
+
+(after:1500ms)+(append:?Narr)[&lt;br&gt;|N1&gt;[··· ···](animate:?N1, &quot;fadeup&quot;)&lt;br&gt;]
+(after:3000ms)+(append:?Narr)[|N2&gt;[집으로 도착하고 나서](animate:?N2, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+(after:5000ms)+(append:?Narr)[|Img1&gt;[&lt;img src = &quot;images/dish-washing.jpg&quot;  height = &quot;700px&quot; width = &quot;400px&quot;&gt;](animate:?Img1, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:7000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L00&gt;[// 나 당신한테 할 말 있어. //](animate:?L00, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:9000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|L12&gt;[//해 ~ 듣고있어.//](animate:?L12, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:11000ms)+(append:?Narr)[|N3&gt;[김 부장은 용기를 낸다.](animate:?N3, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:13000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L2&gt;[ ··· 중요한 얘기야. (animate:?L2, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:15000ms)+(append:?Narr)[|N4&gt;[김 부장의 무릎이 바닥에 닿는다. ](animate:?N4, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:17000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|L27&gt;[//지금 뭐하는 거야? 당신? //](animate:?L27, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:19000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L21&gt;[//내가  ··· 면목이 없어.//](animate:?L21, &quot;faderight&quot;)&lt;br&gt;]
+(after:21000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L3&gt;[진즉에 당신하고 상의라도 했어야 했는데 ···(animate:?L3, &quot;faderight&quot;)]&lt;br&gt;]
+(after:23000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L02&gt;[//사 ··· 사고를 쳤어.//](animate:?L02, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:25000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|L10&gt;[// 앞뒤 다 자르고 대체 무슨 소리야? 그게 ···  //(animate:?L10, &quot;fadeleft&quot;)]&lt;br&gt;]
+(after:27000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|L23&gt;[//사고라니? ··· 무슨 사고?//](animate:?L23, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:29000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L03&gt;[//그 ··· 그러니까 내가 ···//](animate:?L03, &quot;faderight&quot;)&lt;br&gt;]
+(after:31000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey + black)|L26&gt;[// ··· 저기 신도시를 새로 짓는 상가를 하나 분양 받았는데 ···//](animate:?L26, &quot;faderight&quot;)&lt;br&gt;]
+(after:33000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A1&gt;[//··· 아무래도 사기를 당한 것 같아. //(animate:?A1, &quot;faderight&quot;)]&lt;br&gt;]
+
+(after:35000ms)+(append:?Narr)[
+	[[계속-&gt;고백2]]
+]
+
+</tw-passagedata><tw-passagedata pid="49" name="고백2" tags="" position="700,4800" size="100,100">|Narr&gt;[]
+
+(after:1500ms)+(append:?Narr)[&lt;br&gt;|N1&gt;[1시간 같은 1분의 침묵이 흐른다.](animate:?N1, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:3000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|L12&gt;[//사기 ···?//](animate:?L12, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:5000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|L27&gt;[//그게 무슨 말이야? //](animate:?L27, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:7000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|L10&gt;[// 상가를 샀다는 건 또 무슨 소리고 ···  //(animate:?L10, &quot;fadeleft&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:9000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L00&gt;[// 미 ··· 미안해, 여보.//](animate:?L00, &quot;faderight&quot;)&lt;br&gt;]
+(after:11000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L2&gt;[내가 ··· 겁도 없이 당신한테 말도 안 하고 (animate:?L2, &quot;faderight&quot;)]&lt;br&gt;]
+(after:13000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L21&gt;[//상가를  ··· 분양받았어.//](animate:?L21, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:15000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W4&gt;[//···//](animate:?W4, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:17000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W1&gt;[//어디서 돈이 생겨서 당신이 상가를 사?//](animate:?W1, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:19000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W2&gt;[//얼마짜린데?//](animate:?W2, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:21000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L3&gt;[7 ··· 7억(animate:?L3, &quot;faderight&quot;)]&lt;br&gt;]
+(after:23000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L02&gt;[//퇴직했을 때 받은 거랑  ··· 대출을 좀 받았어.//](animate:?L02, &quot;faderight&quot;)&lt;br&gt;]
+(after:25000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L03&gt;[//지하철이 들어온다고 ··· 엄청 좋은 자리라고 사기를 당했어.//](animate:?L03, &quot;faderight&quot;)&lt;br&gt;]
+(after:27000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L26&gt;[// 알아보니 사람도 얼마 없고 임대가 안 나가.//](animate:?L26, &quot;faderight&quot;)&lt;br&gt;]
+(after:29000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A1&gt;[//이자는 쌓어가는데 방도가 없어. //(animate:?A1, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:31000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A2&gt;[//이제 와서  ··· 당신한테 이렇게 말해서 //(animate:?A2, &quot;faderight&quot;)]&lt;br&gt;]
+(after:33000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A3&gt;[// ··· 정말 미안해. //(animate:?A3, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:35000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A4&gt;[// 도저히 말할 용기가 나질 않았어. //(animate:?A4, &quot;faderight&quot;)]&lt;br&gt;]
+(after:37000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A5&gt;[// 어떻게 해야 할지  ··· //(animate:?A5, &quot;faderight&quot;)]&lt;br&gt;]
+(after:39000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A6&gt;[//  ··· 도저히 모르겠어. //(animate:?A6, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:41000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W3&gt;[//그래서  ··· 그랬구나.//](animate:?W3, &quot;fadeleft&quot;)&lt;br&gt;]
+
+(after:43000ms)+(append:?Narr)[
+	[[계속-&gt;고백3]]
+]
+
+</tw-passagedata><tw-passagedata pid="50" name="고백3" tags="" position="900,4900" size="100,100">|Narr&gt;[]
+
+
+(after:1500ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L00&gt;[// 여 ··· 여보.//](animate:?L00, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+(after:3000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|L12&gt;[//그래서 당신 얼굴이 그동안 그렇게 어두웠어.//](animate:?L12, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+(after:5000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L2&gt;[내 ··· 내가 어떻게든 해결할게! (animate:?L2, &quot;faderight&quot;)]&lt;br&gt;]
+(after:7000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L21&gt;[//막노동을 해서라도 돈 벌어서 갚을게!//](animate:?L21, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:9000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|L27&gt;[//지금 그게 중요한 게 아니잖아. //](animate:?L27, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:11000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|L10&gt;[// 왜 사람을 이렇게 비참하게 만들어. //(animate:?L10, &quot;fadeleft&quot;)]&lt;br&gt;]
+(after:13000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W4&gt;[//뭐가 그렇게 힘들었어?//](animate:?W4, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+(after:15000ms)+(append:?Narr)[(text-size:1.00)+(text-color:red +white +black)|W1&gt;[//나한테 고민 한마디 얘기하는 게 왜 그렇게 힘들었냐고!//](animate:?W1, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+(after:17000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W2&gt;[//난 당신 ··· 아내잖아.//](animate:?W2, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:19000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W3&gt;[//혼자 머리 싸매고 공항장애를 앓을 정도로//](animate:?W3, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:21000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W5&gt;[//힘든 고민을 ··· //](animate:?W5, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:23000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W6&gt;[// 말 한마디 못 할 상대면 안 되는 거잖아  ··· //](animate:?W6, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:25000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W7&gt;[//가자. 더 어두워지기 전에  ··· //](animate:?W7, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+(after:27000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L3&gt;[··· 가다니 어딜? 혹시 법원? (animate:?L3, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:29000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W8&gt;[//상가 산 곳이 어디야? 지금 가보자고  ··· //](animate:?W8, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+(after:31000ms)+(append:?Narr)[
+	[[계속-&gt;매매 상가]]
+]
+
+</tw-passagedata><tw-passagedata pid="51" name="매매 상가" tags="" position="700,4950" size="100,100">|Narr&gt;[]
+
+(after:1500ms)+(append:?Narr)[&lt;br&gt;|N1&gt;[갑작스러운 비와 함께](animate:?N1, &quot;fadeup&quot;)&lt;br&gt;]
+(after:3000ms)+(append:?Narr)[|N2&gt;[어둠이 내리기 시작한 시간.](animate:?N2, &quot;fadeup&quot;)&lt;br&gt;]
+(after:5000ms)+(append:?Narr)[|N3&gt;[쳐다보기도 싫었던 그곳으로 향한다.](animate:?N3, &quot;fadeup&quot;)&lt;br&gt;]
+(after:7000ms)+(append:?Narr)[|N4&gt;[예전과 달라진 것이 있다면](animate:?N4, &quot;fadeup&quot;)&lt;br&gt;]
+(after:9000ms)+(append:?Narr)[|N5&gt;[운전대를 잡은 것이 아내라는 것.](animate:?N5, &quot;fadeup&quot;)&lt;br&gt;]
+(after:11000ms)+(append:?Narr)[|N6&gt;[그리고 부풀었던 기대 대신 탄식 섞인](animate:?N6, &quot;fadeup&quot;)&lt;br&gt;]
+(after:13000ms)+(append:?Narr)[|N7&gt;[한숨만이 차 안에 감돈다는 것 정도였다.](animate:?N7, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+
+(after:15000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|L12&gt;[//계약서 내용은 그게 전부야?//](animate:?L12, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+(after:17000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L00&gt;[// 으 ··· 응.//](animate:?L00, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:19000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L2&gt;[//그런데 여보. 너무 늦지 않았을까?//(animate:?L2, &quot;faderight&quot;)]&lt;br&gt;]
+(after:21000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L21&gt;[//지금 시간에 가보는 건 ···//](animate:?L21, &quot;faderight&quot;)&lt;br&gt;]
+(after:23000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L3&gt;[···비도 이렇게 많이 오는데. (animate:?L3, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:25000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|L27&gt;[//늦어도 한참 늦었지.//](animate:?L27, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:27000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|L10&gt;[// 홍보를 목적으로 현실보다 살짝 과장할 순 있어도 //(animate:?L10, &quot;fadeleft&quot;)]&lt;br&gt;]
+(after:29000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W4&gt;[//불확실한 정보를 확정된 사안처럼 계약자를//](animate:?W4, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:31000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W1&gt;[// 속이는 기망행위는 대표적인 상가 분양사기야//](animate:?W1, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+(after:33000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W2&gt;[//계약 직후였다면 상황이 조금 달랐겠지만//](animate:?W2, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:35000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W3&gt;[//지금 우린 잔금까지 납부하고 //](animate:?W3, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:37000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W5&gt;[//소유권 등기 이전까지 한 상태잖아. //](animate:?W5, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+(after:39000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W6&gt;[// 소송을 건다고 해도 변심이 아니라//](animate:?W6, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:41000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W7&gt;[// 거짓 광고에 속았다는 자료를 모아야 하고 //](animate:?W7, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:43000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W8&gt;[//진행 기간도 꽤 걸릴 테니 승소의 결과를 얻기까지//(animate:?W8, &quot;faderight&quot;)]&lt;br&gt;]
+(after:45000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W9&gt;[//오랜 시간이 걸릴 거야. //](animate:?W9, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:47000ms)+(append:?Narr)[|N8&gt;[공인중개사 자격증을 따서일까?](animate:?N8, &quot;fadeup&quot;)&lt;br&gt;]
+(after:49000ms)+(append:?Narr)[|N9&gt;[아내가 하는 말이 꽤나 전문적으로 들린다.](animate:?N9, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:51000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W10&gt;[// 어떻게 대처하든 시간이 지체될수록 //](animate:?W10, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:53000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W11&gt;[// 우리한테 불리한 건 분명해 //](animate:?W11, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+(after:55000ms)+(append:?Narr)[|N10&gt;[김 부장이 아내의 설명을 모두 이해한 것은 아니었지만](animate:?N10, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+(after:57000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W12&gt;[//그러니까 당장 가야 돼.//(animate:?W12, &quot;faderight&quot;)]&lt;br&gt;]
+(after:59000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W13&gt;[//기서 입지라도 눈으로 먼저 확인을 해야지. //](animate:?W13, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:61000ms)+(append:?Narr)[|N11&gt;[본인의 실수를 우리의 일이라고 말하는](animate:?N11, &quot;fadeup&quot;)&lt;br&gt;]
+(after:63000ms)+(append:?Narr)[|N12&gt;[아내에게서 안도감을 느끼고 있었다.](animate:?N12, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:65000ms)+(append:?Narr)[
+	[[계속-&gt;매매 상가2]]
+]
+
+</tw-passagedata><tw-passagedata pid="52" name="매매 상가2" tags="" position="900,5050" size="100,100">|Narr&gt;[]
+
+(after:1500ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:red +white +black)|L12&gt;[//우리 상가가 ··· 여기라고?//](animate:?L12, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:3000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L00&gt;[// 으 ··· 으응.//](animate:?L00, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:5000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|L27&gt;[//들어가 보자. 내부도 좀 봐야겠어.//](animate:?L27, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:6500ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|L10&gt;[// 비밀번호 뭐야? //(animate:?L10, &quot;fadeleft&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:8000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L2&gt;[//그게 ··· # 누르고 1 ··· 1017 //(animate:?L2, &quot;faderight&quot;)]&lt;br&gt;]
+(after:10000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L21&gt;[//우리 결혼 기념일.//](animate:?L21, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:12000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W1&gt;[//제법 평수가 크네? //](animate:?W1, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:14000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W2&gt;[//이 정도 평수에 뭐가 들어올 수 있을지//](animate:?W2, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:16000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W3&gt;[//생각해 봤어? //](animate:?W3, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:18000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L3&gt;[//카페나 ··· 빵집정도?// (animate:?L3, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:20000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W4&gt;[//1층에 코너 자리가 목이 나쁜 건 아닌데//](animate:?W4, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:22000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W5&gt;[//주변에 상가가 너무 많아. //](animate:?W5, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:24000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W6&gt;[//유동 인구가 없으니 장사보다는//](animate:?W6, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:26000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W7&gt;[//사무실이나 창고로 임대해도 괜찮을 거 같은데 ··· //](animate:?W7, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:28000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W8&gt;[//혹시 주변에 사무실 필요한 사람 없어?//(animate:?W8, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:30000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A1&gt;[//그 ··· 글쎄? //(animate:?A1, &quot;faderight&quot;)]&lt;br&gt;]
+(after:32000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A2&gt;[//사업 시작한다는 소리는 못 들어서 ··· //](animate:?LA2, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:34000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W9&gt;[// ··· 내 정신 좀 봐. //](animate:?W9, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:36000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W10&gt;[// 멀리서 찾을 게 아니었네 //](animate:?W10, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:38000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|A3&gt;[//누구 아는 사람 있어? //(animate:?A3, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:40000ms)+(append:?Narr)[
+	[[계속-&gt;매매 상가3]]
+]
+
+</tw-passagedata><tw-passagedata pid="53" name="매매 상가3" tags="" position="700,5100" size="100,100">|Narr&gt;[]
+
+(after:1500ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:red +white +black)|L12&gt;[//어, 아들. 아직 안 잤니? 물어볼 게 있어서//](animate:?L12, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:3000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|L27&gt;[//너 지금 창고로 쓰는 곳 좁다고 했지?//](animate:?L27, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:5000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|L10&gt;[// 혹시 새로 알아보고 있어? //(animate:?L10, &quot;fadeleft&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:7000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W1&gt;[//아! 그래? 잘됐다. 내일 아침에//](animate:?W1, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:9000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W2&gt;[//일어나면 집으로 좀 와.//](animate:?W2, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:11000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L00&gt;[// 여 ··· 여보! 지금 무슨 ···//](animate:?L00, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:13000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W3&gt;[//엄마가 봐둔 데가 있어서 그래. //](animate:?W3, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:15000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L2&gt;[//당신 설마 ··· //(animate:?L2, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:17000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W4&gt;[//응. 설명은 내일 자세히 해줄게.//](animate:?W4, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:19000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W5&gt;[//그래. 잘 자고 내일 보자. //](animate:?W5, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:21000ms)+(append:?Narr)[|N1&gt;[뚝.](animate:?N1, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:23000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W6&gt;[//우리 아들도 엄연한 사업자야. 사장이고 ···//](animate:?W6, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:25000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W7&gt;[//여기 못 들어올 게 뭐 있어?//](animate:?W7, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:27000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L21&gt;[//아무리 그래도 여보, 그건 좀 ···//](animate:?L21, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:29000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W8&gt;[//비어있는 것보다 낫잖아.//(animate:?W8, &quot;faderight&quot;)]&lt;br&gt;]
+(after:31000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W9&gt;[//공짜로 주겠다는 거 아니야. 월세 받을 거야. //](animate:?W9, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:33000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W10&gt;[// 자식이니까 D.C는 좀 해주겠지만 ···  //](animate:?W10, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:35000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W11&gt;[//그래도 이자 정도는 낼 수 있겠지.//(animate:?W11, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:37000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W12&gt;[//당신이 무슨 걱정하는지 알아.  //](animate:?W12, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:39000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W13&gt;[//내가 알아서 잘 말할게.  //](animate:?W13, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:41000ms)+(append:?Narr)[
+	[[계속-&gt;매매 상가4]]
+]
+
+</tw-passagedata><tw-passagedata pid="54" name="매매 상가4" tags="" position="900,5200" size="100,100">|Narr&gt;[]
+
+(after:1500ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L00&gt;[// 아 ··· 알겠어.//](animate:?L00, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:3000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|L12&gt;[//그리고 앞으로는 ···//](animate:?L12, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:4500ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|L27&gt;[//··· 이렇게 중요한 결정을 내릴 때//](animate:?L27, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:6000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|L10&gt;[// 나한테도 미리 좀 말해 줘. //(animate:?L10, &quot;fadeleft&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:7500ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W1&gt;[//당신을 못 믿겠다는 뜻이 아니야.//](animate:?W1, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:9000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W2&gt;[//안 믿었으면 같이 살지도 않았고//](animate:?W2, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:10500ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W3&gt;[//직장도 계속 다녔겠지. 안 그래? //](animate:?W3, &quot;fadeleft&quot;)&lt;br&gt;]
+
+(after:12000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W4&gt;[//당신 똑똑하고 능력 있고 성실한 것까지//](animate:?W4, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:13500ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W5&gt;[//세상에서 내가 제일 잘 알아. //](animate:?W5, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:15000ms)+(append:?Narr)[|N1&gt;[지금 이 순간, 아내가 아닌 다른 누가](animate:?N1, &quot;fadeup&quot;)&lt;br&gt;]
+(after:16500ms)+(append:?Narr)[|N2&gt;[그에게 이런 말을 해 줄 수 있을까?](animate:?N2, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:18000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W6&gt;[//그러니까 ···//](animate:?W6, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:20000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W7&gt;[//··· 당신도 그런 나를 좀 믿어달란 소리야.//](animate:?W7, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:21500ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W8&gt;[//앞으로는 당신의 고민 한마디//(animate:?W8, &quot;faderight&quot;)]&lt;br&gt;]
+(after:23000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W9&gt;[//못 들어줄 사람으로 만들지 말아 줘. //](animate:?W9, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:24500ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W10&gt;[// 내가 줄 수 있는 마지막 기회야. //](animate:?W10, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:26000ms)+(append:?Narr)[|N3&gt;[그녀의 말대로 ···](animate:?N3, &quot;fadeup&quot;)&lt;br&gt;]
+(after:27500ms)+(append:?Narr)[|N4&gt;[그녀는 누구보다 김 부장에 대해 잘 아는 사람이다.](animate:?N4, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+(after:29000ms)+(append:?Narr)[|N5&gt;[아마도 사기를 당했다고 역정부터 냈다면](animate:?N5, &quot;fadeup&quot;)&lt;br&gt;]
+(after:30500ms)+(append:?Narr)[|N6&gt;[받아치는 큰 소리를 냈을지도 모른다.](animate:?N6, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:32000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L21&gt;[//당신 말이 맞아 앞으로 꼭 그렇게 할게.//](animate:?L21, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:33500ms)+(append:?Narr)[|N7&gt;[본인의 고집으로 만든 실수를](animate:?N7, &quot;fadeup&quot;)&lt;br&gt;]
+(after:35000ms)+(append:?Narr)[|N8&gt;[정당화하려 애섰을 것이고](animate:?N8, &quot;fadeup&quot;)&lt;br&gt;]
+(after:36500ms)+(append:?Narr)[|N08&gt;[부부 사이는 그렇게 흐트러졌을 것이다.](animate:?N08, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:38000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W11&gt;[//가족을 위해서 //(animate:?W11, &quot;faderight&quot;)]&lt;br&gt;]
+(after:39500ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W12&gt;[//잘해보려고 그랬다는 거 잘 알아 ···  //](animate:?W12, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:41000ms)+(append:?Narr)[|N9&gt;[본인만 모르고 있었을 뿐.](animate:?N9, &quot;fadeup&quot;)&lt;br&gt;]
+(after:42500ms)+(append:?Narr)[|N10&gt;[그의 주변엔 항상 그의 편이 함께 있었다.](animate:?N10, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:44000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W13&gt;[//혼자서만 하지 말고 앞으론 같이 하자. //](animate:?W13, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:45500ms)+(append:?Narr)[|N11&gt;[김 부장은 이제야 그 사실을 좀 아는 듯 보인다.](animate:?N11, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:47000ms)+(append:?Narr)[
+	[[계속-&gt;아들 회사]]
+]
+
+</tw-passagedata><tw-passagedata pid="55" name="아들 회사" tags="" position="700,5250" size="100,100">|Narr&gt;[]
+
+(after:1500ms)+(append:?Narr)[&lt;br&gt;|N1&gt;[일주일 후 ···](animate:?N1, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:3000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#00407F)|W1&gt;[// 김 인턴님. 오셨습니까. //](animate:?W1, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:5000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L21&gt;[//이게 ··· 자꾸 아빠를 놀려.//](animate:?L21, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:7000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#00407F)|W2&gt;[//하하하//](animate:?W2, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:9000ms)+(append:?Narr)[|N2&gt;[김 부장은 일자리를 구할 때까지만](animate:?N2, &quot;fadeup&quot;)&lt;br&gt;]
+(after:11000ms)+(append:?Narr)[|N3&gt;[아들과 같이 일하기로 했다.](animate:?N3, &quot;fadeup&quot;)&lt;br&gt;]
+(after:13000ms)+(append:?Narr)[|N4&gt;[그리고 예보보다 조금 이르게 첫눈이 내렸다.](animate:?N4, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:15000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#00407F)|W3&gt;[//생각보다 많이 오네요.//](animate:?W3, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:17000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#00407F)|W4&gt;[//그래도 비가 아니라 다행인 거 같아요.//](animate:?W4, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:19000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L00&gt;[// 첫눈 오는 날 이사라니 ··· 너 부자 되려나 보다.//](animate:?L00, &quot;faderight&quot;)&lt;br&gt;]
+(after:21000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey + black)|L26&gt;[// 짐이 꽤 많네. //](animate:?L26, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:23000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#00407F)|L41&gt;[// 한 차 더 와야 돼요. //](animate:?L41, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:25000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#00407F)|W7&gt;[// 사무실 겸 창고로도 쓸 거라서 //](animate:?W7, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:27000ms)+(append:?Narr)[|N5&gt;[한때는 제 자식도 대기업 다닌다고 자랑하고 싶었다.](animate:?N5, &quot;fadeup&quot;)&lt;br&gt;]
+(after:29000ms)+(append:?Narr)[|N6&gt;[누구보다 이토록 가깝고 소중한 아이인데,](animate:?N6, &quot;fadeup&quot;)&lt;br&gt;]
+(after:31000ms)+(append:?Narr)[|N7&gt;[본인은 고작 과시용 도구 정도로 생각했다는 게](animate:?N7, &quot;fadeup&quot;)&lt;br&gt;]
+(after:33000ms)+(append:?Narr)[|N8&gt;[부끄럽고 미안하다.](animate:?N8, &quot;fadeup&quot;)&lt;br&gt;]
+
+(after:35000ms)+(append:?Narr)[
+	[[계속-&gt;아들 회사2]]
+]
+</tw-passagedata><tw-passagedata pid="56" name="아들 회사2" tags="" position="900,5350" size="100,100">|Narr&gt;[]
+
+(after:1500ms)+(append:?Narr)[&lt;br&gt;|N1&gt;[다시 시간이 지나고 ···](animate:?N1, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:3000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#00407F)|W1&gt;[// 네. 전화 받았습니다. //](animate:?W1, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:5000ms)+(append:?Narr)[|N3&gt;[아들이 직원을 대하고 일하는 모습을 보며,](animate:?N3, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:7000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#00407F)|W3&gt;[//좋습니다.//](animate:?W3, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:9000ms)+(append:?Narr)[|N4&gt;[자신이 김 부장일 때 모습을 회상하고](animate:?N4, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:11000ms)+(append:?Narr)[(text-size:0.85)+(text-color:#00407F)|W4&gt;[//아! 그건 이렇게 ···//](animate:?W4, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:13000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L00&gt;[//(꽤 사장 같네 ···)//](animate:?L00, &quot;faderight&quot;)&lt;br&gt;]
+(after:15000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey + black)|L26&gt;[// (내가 부장이었을 때, 부하 직원들은 ···) //](animate:?L26, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:17000ms)+(append:?Narr)[|N5&gt;[자기 자신을 돌아본다.](animate:?N5, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+(after:19000ms)+(append:?Narr)[|N6&gt;[호칭이 익숙해질 무렵](animate:?N6, &quot;fadeup&quot;)&lt;br&gt;]
+(after:21000ms)+(append:?Narr)[|N7&gt;[이곳에서 꽤나 잘 적응하고 있다.](animate:?N7, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:23000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey + black)|A1&gt;[// 다했다~ //](animate:?A1, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:25000ms)+(append:?Narr)[|N8&gt;[짬짬이 공부도 하면서](animate:?N8, &quot;fadeup&quot;)&lt;br&gt;]
+(after:27000ms)+(append:?Narr)[|N9&gt;[직원들이 하는 일을 어깨너머로 훔쳐 배우고 있었고](animate:?N9, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:29000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey + black)|A2&gt;[// 저기 ··· 물어보고 싶은 게 있는데 말야. //](animate:?A2, &quot;faderight&quot;)&lt;br&gt;]
+(after:31000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey + black)|A3&gt;[// 혹시 그거 ··· . //](animate:?A3, &quot;faderight&quot;)&lt;br&gt;]
+(after:33000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey + black)|A4&gt;[// ··· 나도 좀 해볼 수 있을까? //](animate:?A4, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:35000ms)+(append:?Narr)[|N10&gt;[모르는 것을 물어보는 것은 부끄럽지도 ··· ](animate:?N10, &quot;fadeup&quot;)&lt;br&gt;]
+(after:37000ms)+(append:?Narr)[|N11&gt;[ ··· 그리 대단한 일도 아니었다는 것을 깨닫는다. ](animate:?N11, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:39000ms)+(append:?Narr)[
+	[[계속-&gt;아내와 대화]]
+]
+</tw-passagedata><tw-passagedata pid="57" name="아내와 대화" tags="" position="700,5400" size="100,100">|Narr&gt;[]
+
+(after:1500ms)+(append:?Narr)[&lt;br&gt;|N1&gt;[퇴근 후](animate:?N1, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:3000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L1&gt;[// 어디 보자. 맥주가 ··· 있다.//](animate:?L1, &quot;faderight&quot;)&lt;br&gt;]
+(after:5000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L2&gt;[//저번에 사둔 게 아직 두 개 남았네.//](animate:?L2, &quot;faderight&quot;)&lt;br&gt;]
+(after:7000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L3&gt;[//이걸로 돼? 부족하면 더 사 올까?//(animate:?L3, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:9000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W1&gt;[// 됐어. 뭐 얼마나 마시려고? //(animate:?W1, &quot;fadeleft&quot;)]&lt;br&gt;]
+(after:11000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W2&gt;[//그냥 목 축일 정도면 돼.//](animate:?W2, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:13000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L4&gt;[//안주는 이거라도 구울까? 아니면 ···//](animate:?L4, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:15000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W3&gt;[//··· 됐다니까?//](animate:?W3, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:17000ms)+(append:?Narr)[|N2&gt;[오랜만에 마주 앉아](animate:?N2, &quot;fadeup&quot;)&lt;br&gt;]
+(after:19000ms)+(append:?Narr)[|N3&gt;[맥주 한 캔을 기울인다.](animate:?N3, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:21000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L5&gt;[//자, 여기 ····//](animate:?L5, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:23000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W4&gt;[//아, 고마워.//](animate:?W4, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:25000ms)+(append:?Narr)[|N4&gt;[마른 오징어를 굽는 대신 ](animate:?N4, &quot;fadeup&quot;)&lt;br&gt;]
+(after:27000ms)+(append:?Narr)[|N5&gt;[그간 마음속에 담아두고 못했던 말들을(animate:?N5, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:29000ms)+(append:?Narr)[|N6&gt;[허심탄회하게 털어놓기로 한다.(animate:?N6, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:31000ms)+(append:?Narr)[(text-size:1.20)+(text-color:red +white +black)|W5&gt;[// 캬아~ 시원해! 이제야 좀 살 것 같다!!//](animate:?W5, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:33000ms)+(append:?Narr)[
+	[[계속-&gt;아내와 대화2]]
+]
+
+</tw-passagedata><tw-passagedata pid="58" name="아내와 대화2" tags="" position="900,5500" size="100,100">|Narr&gt;[]
+
+(after:1500ms)+(append:?Narr)[&lt;br&gt;(text-size:0.85)+(text-color:grey+black)|L1&gt;[// 당신 ··· //](animate:?L1, &quot;faderight&quot;)&lt;br&gt;]
+(after:3000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L2&gt;[//··· 왜 나 같은 놈이랑 결혼했어?//](animate:?L2, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:5000ms)+(append:?Narr)[|N1&gt;[가장 하기 두려운 질문이었다.](animate:?N1, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:7000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W1&gt;[// 당신 같은 놈이 어때서? //(animate:?W1, &quot;fadeleft&quot;)]&lt;br&gt;]
+(after:9000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W2&gt;[//자신감 넘치고 당당하고 성실하고 ··· //](animate:?W2, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:11000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W3&gt;[//본일 일에 충실하잖아. 그러면 됐지.//](animate:?W3, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:13000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W4&gt;[//그리고 당신은 이유 같은 게 있어서 같이 살아?//](animate:?W4, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:15000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W5&gt;[// 그냥 사람이 좋아서 살지. 지금도 그렇고 ··· //](animate:?W5, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:17000ms)+(append:?Narr)[|N2&gt;[비밀을 털어놓을 때만 해도](animate:?N2, &quot;fadeup&quot;)&lt;br&gt;]
+(after:19000ms)+(append:?Narr)[|N3&gt;[이혼을 당할 각오까지 했던 김 부장이었기에](animate:?N3, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:21000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L3&gt;[//내 ··· 내가 밉진 않아?//(animate:?L3, &quot;faderight&quot;)]&lt;br&gt;]
+(after:23000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L4&gt;[//나랑 살면서 내가 싫었던 적은 없었어?//](animate:?L4, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:25000ms)+(append:?Narr)[(text-size:1.20)+(text-color:red +white +black)|W6&gt;[//왜 없어!//](animate:?W6, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:27000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L5&gt;[//어 ··· 언제였는데?//](animate:?L5, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:29000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W7&gt;[//글쎄? 말하려니 딱히 언제였는지 //](animate:?W7, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:31000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W8&gt;[//생각이 잘 안 나네. 몰라. 다 잊었어.//(animate:?W8, &quot;faderight&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:33000ms)+(append:?Narr)[|N4&gt;[ 감정의 간격이 좁혀지는 데 필요한 것은 ](animate:?N4, &quot;fadeup&quot;)&lt;br&gt;]
+(after:35000ms)+(append:?Narr)[|N5&gt;[고작 맥주 딱 한 캔이었다.(animate:?N5, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:37000ms)+(append:?Narr)[|N6&gt;[이렇게나 쉽게 터놓을 수 있는 마음의 이야기들을(animate:?N6, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:39000ms)+(append:?Narr)[|N7&gt;[왜 한 번도 하려 하지 않았을까?(animate:?N7, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:41000ms)+(append:?Narr)[|N8&gt;[왜 한 번도 들으려 하지 않았을까?(animate:?N8, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:43000ms)+(append:?Narr)[|N9&gt;[··· 자책하게 된다.(animate:?N9, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:45000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W9&gt;[//오랜만에 마시니 이걸로도 취하네. //](animate:?W9, &quot;fadeleft&quot;)&lt;br&gt;]
+(after:47000ms)+(append:?Narr)[(text-size:0.85)+(text-color:red +white +black)|W10&gt;[// 젊을 땐 소주 한 병도 끄떡없었는데 ··· //](animate:?W10, &quot;fadeleft&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:49000ms)+(append:?Narr)[(text-size:0.85)+(text-color:grey+black)|L5&gt;[//당신 술 꽤 잘했지. 하하하~//](animate:?L5, &quot;faderight&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:51000ms)+(append:?Narr)[
+	[[계속-&gt;End]]
+]
+
+</tw-passagedata><tw-passagedata pid="59" name="End" tags="" position="800,5700" size="100,100">|Narr&gt;[]
+
+(after:1500ms)+(append:?Narr)[&lt;br&gt;|N1&gt;[절대 말하지 못할 것 같았던](animate:?N1, &quot;fadeup&quot;)&lt;br&gt;]
+(after:3000ms)+(append:?Narr)[|N2&gt;[속내를 털어놓고 나니](animate:?N2, &quot;fadeup&quot;)&lt;br&gt;]
+(after:5000ms)+(append:?Narr)[|N3&gt;[오늘만큼은 편안한  잠자리에](animate:?N3, &quot;fadeup&quot;)&lt;br&gt;]
+(after:7000ms)+(append:?Narr)[|N4&gt;[ 들 수 있을 것 같았다. ](animate:?N4, &quot;fadeup&quot;)&lt;br&gt;&lt;br&gt;]
+
+(after:9000ms)+(append:?Narr)[|N5&gt;[ 김 부장은 무조건 남들보다(animate:?N5, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:11000ms)+(append:?Narr)[|N6&gt;[빨리 뛰어야 한다고 생각하며 살아왔다.(animate:?N6, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:13000ms)+(append:?Narr)[|N7&gt;[하지만 인생은 더 이상 (animate:?N7, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:15000ms)+(append:?Narr)[|N8&gt;[달리기 경주가 아님을 깨달았다.(animate:?N8, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:17000ms)+(append:?Narr)[|N9&gt;[인생은 산책이다.(animate:?N9, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:19000ms)+(append:?Narr)[|N10&gt;[비가 오면 잠시 비를 피하고 (animate:?N10, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:21000ms)+(append:?Narr)[|N11&gt;[눈이 오면 눈을 맞으며 걷는 것이다.(animate:?N11, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:23000ms)+(append:?Narr)[|N12&gt;[혼자 걷다가도 또다시 (animate:?N12, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:25000ms)+(append:?Narr)[|N13&gt;[함께 걷는 것이다. (animate:?N13, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:27000ms)+(append:?Narr)[|N14&gt;[주변을 둘러보고 하늘도 가끔  (animate:?N14, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:29000ms)+(append:?Narr)[|N15&gt;[ 한 번씩 올려보는 것이다. (animate:?N15, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:31000ms)+(append:?Narr)[|N16&gt;[ 함께 걷는 사람과 서로를 도닥이고, (animate:?N16, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:33000ms)+(append:?Narr)[|N17&gt;[ 걷는 것 자체를 즐기며 가는 것이(animate:?N17, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:35000ms)+(append:?Narr)[|N18&gt;[ 우리네 인생길 아닐까? (animate:?N18, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:37000ms)+(append:?Narr)[|N19&gt;[ 어렵게 찾은 행복을 더 키워나갈 출발선이 될지, (animate:?N19, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:39000ms)+(append:?Narr)[|N20&gt;[ 같은 실수를 반복하게 될지는 아무도 모른다. (animate:?N20, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:41000ms)+(append:?Narr)[|N21&gt;[ 그에겐 여전히 어디에 내놔도 (animate:?N21, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:43000ms)+(append:?Narr)[|N22&gt;[ 자랑스러운 아들과 아내가 있고 (animate:?N22, &quot;fadeup&quot;)]&lt;br&gt;]
+(after:45000ms)+(append:?Narr)[|N23&gt;[ 여전히 두 발 뻗고 지낼 집이 있다.(animate:?N23, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:47000ms)+(append:?Narr)[|N24&gt;[ 그런 그에게 행복을 묻는다면 ··· (animate:?N24, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:49000ms)+(append:?Narr)[|N25&gt;[ ··· 그는 자신 있게 웃는다. (animate:?N25, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:51000ms)+(append:?Narr)[|N26&gt;[ 여전히 행복하지 않을 이유가 없다.(animate:?N26, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+(after:53000ms)+(append:?Narr)[|Img1&gt;[ &lt;img src = &quot;images/Ending.jpg&quot; &gt; (animate:?Img1, &quot;fadeup&quot;)]&lt;br&gt;&lt;br&gt;]
+
+(after:55000ms)+(append:?Narr)[
+	[[Ending-&gt;시작]]
+]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
